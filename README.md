@@ -44,9 +44,15 @@ You will need the following technologies available to try it out:
 - Add thymeleaf ui page. 
 - 
 
-### Schema databases
+### How it looks
 
-![]()
+![](https://i.postimg.cc/YSy0DZmf/912c8cee-3bdf-4a68-8654-ec2d57d2ee8b.png)
+
+
+### Schema database
+
+![](https://i.postimg.cc/XNBLL0yL/Bank-account-system-er-diagram-e1591891863941.jpg)
+
 
 ### How it works.
 
