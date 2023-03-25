@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Log4j2
 @RequestMapping("/api/v1/accounts")
 public class BankAccountResource {
-    @GetMapping("")
+    @GetMapping("/")
     public String openMainPage() {
         log.info("The main page was open");
         return "index";
