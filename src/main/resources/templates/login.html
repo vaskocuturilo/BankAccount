@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="image/png" href="../static/img/icon.png"/>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Bank Account</title>
+</head>
+<body>
+<nav>
+    <p class="welcome">Log in to get started</p>
+    <img src="/img/logo.png" alt="Logo" class="logo"/>
+    <form class="login">
+        <input
+                type="text"
+                placeholder="user"
+                class="login__input login__input--user"
+                id="input_login"
+                name="login"
+        />
+        <input
+                type="password"
+                placeholder="PIN"
+                maxlength="4"
+                class="login__input login__input--pin"
+                id="input_password"
+                name="password"
+        />
+        <button class="login__btn">&rarr;</button>
+    </form>
+</nav>
+<script src="/js/script.js"></script>
+</body>
+</html>
