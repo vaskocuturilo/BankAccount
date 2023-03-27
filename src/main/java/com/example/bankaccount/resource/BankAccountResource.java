@@ -14,6 +14,12 @@ public class BankAccountResource {
         log.info("The main page was open");
         return "index";
     }
+
+    @GetMapping("/login")
+    public String viewLoginPage() {
+        log.info("The login page was open");
+        return "login";
+    }
 }
 
 

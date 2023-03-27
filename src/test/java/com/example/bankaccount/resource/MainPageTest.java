@@ -14,17 +14,17 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class MainPageTest {
+class MainPageTest {
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     @WithMockUser
-    public void givenMainPage_whenOPenMainPage_thenStatus200() throws Exception {
+    void givenMainPage_whenOPenMainPage_thenStatus200() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(""))
+                        .get("/login"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(view().name("index"));
+                .andExpect(view().name("login"));
     }
 }
