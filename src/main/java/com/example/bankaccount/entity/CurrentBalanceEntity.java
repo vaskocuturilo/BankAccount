@@ -2,16 +2,13 @@ package com.example.bankaccount.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
 import java.util.UUID;
 
 @Entity
-@Table(name = "user_entity")
-@Data
-public class UserEntity {
+public class CurrentBalanceEntity {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -28,11 +25,11 @@ public class UserEntity {
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
 
-    private String owner;
-    private String shortName;
-    private String password;
-    private Double rate;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
+    private String deposit;
+
+    private String summary;
+    @OneToOne
+    @JoinColumn(name = "user_id")
     @JsonIgnore
-    CurrentBalanceEntity currentBalanceEntity;
+    UserEntity user;
 }
