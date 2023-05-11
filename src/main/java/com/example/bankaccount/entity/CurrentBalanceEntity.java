@@ -2,12 +2,14 @@ package com.example.bankaccount.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
 import java.util.UUID;
 
 @Entity
+@Data
 public class CurrentBalanceEntity {
 
     @Id
