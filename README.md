@@ -41,8 +41,10 @@ You will need the following technologies available to try it out:
 - Add functionality for logout timing.
 - Add security functionality.
 - Add JWT token security functionality.
-- Add thymeleaf ui page. 
-- 
+- Add thymeleaf ui page.
+- Add Unit tests
+- Add Integration tests. 
+- Add Acceptence tests
 
 ### How it looks
 
